@@ -3,7 +3,7 @@
 ## Run
 
 ```
-docker run -d --name consul --net=host -v $PWD/consul.d:/etc/consul.d camunda-ci1.local/camunda-consul -dc HQ
+docker run -d --name consul --net=host -v $PWD/consul.d:/etc/consul.d ci1.camunda.loc/camunda-consul -dc HQ
 ```
 
 # Parameters

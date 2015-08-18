@@ -1,6 +1,6 @@
 # image settings for the docker image name, tags and
 # container name while running
-IMAGE_NAME=camunda-ci1.local:5000/camunda-consul
+IMAGE_NAME=ci1.camunda.loc:5000/camunda-consul
 TAGS=latest 0.5.2
 NAME=consul
 
