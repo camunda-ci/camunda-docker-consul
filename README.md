@@ -1,21 +1,27 @@
-# camunda docker consul
+camunda docker consul
+=====================
 
-## Run
+Run
+---
 
 ```
-docker run -d --name consul --net=host -v $PWD/consul.d:/etc/consul.d ci1.camunda.loc/camunda-consul -dc HQ
+docker run -d --name consul --net=host -v $PWD/consul.d:/etc/consul.d ci1.camunda.loc/camunda-consul -dc HQ -server
 ```
 
-# Parameters
+Parameters
+==========
 
 see [Consul Docs](https://www.consul.io/docs/agent/options.html)
 
-- `-dc HQ`
-- `-client LOCAL_BIND_IP`
-- `-bind GLOBAL_BIND_IP`
-- `-bootstrap` (**Only single node allowed with this options**)
-- `-join OTHER_NODE` (multiple times possible)
+-	`-ui-dir=/opt/consul/ui`
+-	`-server`
+-	`-dc HQ`
+-	`-client LOCAL_BIND_IP`
+-	`-bind GLOBAL_BIND_IP`
+-	`-bootstrap` (**Only single node allowed with this options**\)
+-	`-join OTHER_NODE` (multiple times possible)
 
-# Web UI
+Web UI
+======
 
 [http://localhost:8500/ui/](http://localhost:8500/ui/)

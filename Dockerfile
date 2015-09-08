@@ -7,4 +7,4 @@ RUN mkdir -p /opt/consul/data /etc/consul.d && \
 
 EXPOSE 8300 8301 8302 8400 8500 8600
 
-ENTRYPOINT ["/opt/consul/consul", "agent", "-server", "-data-dir", "/opt/consul/data", "-config-dir", "/etc/consul.d", "-ui-dir", "/opt/consul/ui"]
+ENTRYPOINT ["/opt/consul/consul", "agent", "-data-dir", "/opt/consul/data", "-config-dir", "/etc/consul.d"]
